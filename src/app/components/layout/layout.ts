@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import productosData from '../../data/products.json';
-import { ShopingCar } from '../../shoping_car/shoping-car_service';
+import { ShopingCar } from '../../shoping_car/shoping-car.service';
 import { CartIcon } from '../cart-icon/cart-icon';
 import { Router } from '@angular/router';
 

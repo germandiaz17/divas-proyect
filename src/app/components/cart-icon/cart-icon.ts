@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ShopingCar } from '../../shoping_car/shoping-car_service';
+import { ShopingCar } from '../../shoping_car/shoping-car.service';
 
 @Component({
   selector: 'app-cart-icon',

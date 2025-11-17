@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CartItem, ShopingCar } from '../../shoping_car/shoping-car_service';
+import { ShopingCarService, ShopingCar } from '../../shoping_car/shoping-car.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class Cart {
 
-  cartItems: CartItem[] = []
+  cartItems: ShopingCarService[] = []
 
   constructor(private shopingCar: ShopingCar, private router: Router) {}
 

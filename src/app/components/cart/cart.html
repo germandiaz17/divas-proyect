@@ -1,0 +1,24 @@
+<div class="p-4 bg-white rounded-lg shadow">
+  <div class="flex justify-between">
+        <h2 class="text-xl font-semibold mb-4">Carrito de compras</h2>
+        <h4 class="hover:cursor-pointer hover:text-blue-700" (click)="goToHome()">Regresar</h4>
+  </div>
+
+
+  <div *ngFor="let item of cartItems" class="flex justify-between border-b py-2">
+    <div>
+      <p class="font-medium">{{ item.name }}</p>
+      <p class="text-gray-500">Cantidad: {{ item.qty }}</p>
+    </div>
+
+    <button 
+      class="text-red-600 hover:text-red-800"
+      (click)="remove(item.id)">
+      Eliminar
+    </button>
+  </div>
+
+  <div *ngIf="cartItems.length === 0" class="text-gray-400 mt-4">
+    Tu carrito está vacío.
+  </div>
+</div>
